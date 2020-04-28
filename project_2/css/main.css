@@ -1,31 +1,3 @@
-@font-face {
-    font-family: "RalewayRegularLigt";
-    src: url("../fonts/montserrat-light.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "RalewayRegular";
-    src: url("../fonts/raleway.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "RalewayExtraBold";
-    src: url("../fonts/raleway-extrabold.ttf") format("truetype");
-    font-style: bold;
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "RalewayMedium";
-    src: url("../fonts/raleway-medium.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 body {
     width: 1920px;
     margin: 0 auto;
@@ -82,7 +54,7 @@ body {
 .header-wrap {
     display: flex;
     justify-content: flex-start;
-    padding: 45px 370px 0 370px;
+    padding: 45px 0 0 370px;
 }
 
 .header-logo {
@@ -140,43 +112,102 @@ body {
     color: #998675;
 }
 
+.basket {
+    margin: 0 10px 0 20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form-search {
+    margin: 0;
+}
+
+input[type="search"] {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid gray;
+}
+
+input[type="search"]:focus {
+    width: 300px;
+    transition: width 1s ease-out;
+    background-position: right;
+}
+
 .header-carusel {
+    width: 100%;
+    min-height: 930px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.carusel-wrap {
+    width: 100%;
+    min-height: 790px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    width: 100%;
-    min-height: 930px;
-    margin: 0;
-    position: relative;
+    margin: 40px 0 40px 0;
 }
 
 .carusel-arrows {
     display: block;
     width: 80px;
     height: 60px;
+    position: relative;
 }
 
-.carusel-arrows:nth-of-type(1) {
-    margin: 0 0 0 150px;
-    background-image: url(../img/left-arrows.png)
+.carusel-arrows:after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid #d3c1ad;
+    border-right: 2px solid #d3c1ad;
+    position: absolute;
+    top: 0;
 }
 
-.carusel-arrows:nth-of-type(2) {
-    margin: 0 150px 0 0;
-    background-image: url(../img/right-arrows.png)
+.carusel-arrows:first-child:after {
+    transform: rotate(225deg);
+    left: 150px;
 }
 
-.text-carusel {
+.carusel-arrows:last-child:after {
+    transform: rotate(45deg);
+    left: -130px;
+}
+
+.carusel-arrows:hover:after {
+    border-top: 2px solid #8b8b8d;
+    border-right: 2px solid #8b8b8d;
+}
+
+.carusel-arrows:active:after {
+    border-top: 2px solid #998675;
+    border-right: 2px solid #998675;
+}
+
+.carusel-text {
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
 
-.text-carusel span,
+.carusel-text span,
 p {
     width: 60%;
 }
@@ -219,8 +250,7 @@ p {
     display: flex;
     justify-content: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    align-self: flex-end;
     margin: 0 0 40px 0;
 }
 
@@ -243,3 +273,49 @@ p {
     border: 2px solid #8b8b8d;
     transform: scale(1.2);
 }
+
+.carusel-pagination-item:active {
+    background-color: transparent;
+    border: 2px solid #998675;
+    transform: scale(1.2);
+}
+
+.features{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;    
+}
+
+.features-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.features-item:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 3px;
+  background-color: brown;
+}
+
+.features-icon {
+  display: block;
+  fill: brown;
+  margin: 0 0 20px 0;
+}
+
+.features-title {
+  width: 100%;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.features-txt {
+  text-align: center;
+}
+
