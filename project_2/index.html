@@ -29,9 +29,18 @@
                     <li><a class="nav-list-item text-nav" href="#">Contact</a></li>
                 </ul>
             </nav>
-            <a href="" class="basket"></a>
+            <a href="#" class="basket">
+                <svg class="basket-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="24">
+                    <path d="M17.994 5.997v14.998a3 3 0 0 1-2.999 3H3.002a3 3 0 0 1-2.999-3V5.997A2.999 2.999 0 0 1 3.002 3H4.5c0-1.657 2.013-3 4.498-3 2.484 0 4.497 1.343 4.497 3h1.5a2.999 2.999 0 0 1 2.998 2.998zM6 3h5.997c0-1.037-1.342-1.5-2.998-1.5-1.656 0-2.999.463-2.999 1.5zm10.495 16.496H1.502v1.5c0 .828.672 1.5 1.5 1.5h11.993a1.5 1.5 0 0 0 1.5-1.5zm0-13.498a1.5 1.5 0 0 0-1.5-1.5h-1.499v4.5h-1.499v-4.5H6v4.5H4.501v-4.5h-1.5a1.5 1.5 0 0 0-1.499 1.5v11.998h14.993z" />
+                </svg>
+            </a>
             <form class="form-search" action="#" method="post">
-                <input type="search">
+                <label class="search-label">
+                    <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                        <path d="M23.761 23.763a.785.785 0 0 1-1.098 0l-6.217-6.12a10.155 10.155 0 0 1-6.353 2.22C4.52 19.862.001 15.415.001 9.928 0 4.443 4.519-.002 10.093-.002c5.575 0 10.093 4.445 10.094 9.93 0 2.565-.997 4.897-2.618 6.658l6.193 6.095a.758.758 0 0 1 0 1.082zM18.633 9.93c0-4.641-3.823-8.404-8.54-8.404-4.716 0-8.54 3.763-8.54 8.404 0 4.643 3.824 8.405 8.54 8.405 4.717 0 8.54-3.762 8.54-8.405z" />
+                    </svg>
+                    <input class="search-input" type="search">
+                </label>
             </form>
         </div>
         <section class="header-carusel">
@@ -60,11 +69,36 @@
         <section class="features clearfix-section-site padding-site">
             <div class="features-item">
                 <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="49">
-                    <path d="M47.668,19.717 L33.402,33.985 L0.534,48.463 L15.011,15.591 L29.279,1.327 C29.898,0.706 30.904,0.706 31.527,1.327 C32.148,1.950 32.148,2.955 31.527,3.576 L17.683,17.422 L9.107,36.888 L12.106,39.887 L31.573,31.314 L45.420,17.470 C46.039,16.847 47.043,16.847 47.668,17.470 C48.289,18.090 48.289,19.100 47.668,19.717 ZM29.745,28.466 C29.434,28.773 29.028,28.931 28.620,28.931 C28.211,28.931 27.805,28.773 27.495,28.466 C26.875,27.843 26.875,26.836 27.495,26.216 L40.827,12.885 C41.450,12.260 42.454,12.260 43.077,12.885 C43.700,13.505 43.700,14.510 43.077,15.134 L29.745,28.466 ZM26.265,24.985 C25.955,25.293 25.549,25.450 25.140,25.450 C24.734,25.450 24.326,25.293 24.015,24.985 C23.394,24.364 23.394,23.354 24.015,22.735 L37.348,9.403 C37.970,8.780 38.974,8.780 39.598,9.403 C40.219,10.023 40.219,11.030 39.598,11.653 L26.265,24.985 ZM22.784,21.502 C22.473,21.814 22.065,21.968 21.659,21.968 C21.253,21.968 20.845,21.814 20.534,21.502 C19.914,20.883 19.914,19.873 20.534,19.253 L33.867,5.922 C34.490,5.298 35.495,5.298 36.117,5.922 C36.739,6.542 36.739,7.548 36.117,8.172 L22.784,21.502 Z" />
+                    <path d="M47.668 19.717L33.402 33.985.534 48.463l14.477-32.872L29.279 1.327a1.589 1.589 0 1 1 2.248 2.249L17.683 17.422 9.107 36.888l2.999 2.999 19.467-8.573L45.42 17.47a1.587 1.587 0 0 1 2.248 0c.621.62.621 1.63 0 2.247zm-20.173 6.5l13.332-13.332a1.585 1.585 0 0 1 2.25 0c.623.62.623 1.625 0 2.249L29.745 28.466a1.594 1.594 0 0 1-2.25 0 1.593 1.593 0 0 1 0-2.25zm-3.48-3.482L37.348 9.403a1.59 1.59 0 1 1 2.25 2.25L26.265 24.985a1.592 1.592 0 0 1-2.25-2.25zm-3.48-3.482l13.332-13.33a1.586 1.586 0 0 1 2.25 0c.622.62.622 1.625 0 2.25l-13.333 13.33c-.31.31-.719.465-1.125.465s-.814-.154-1.125-.466a1.591 1.591 0 0 1 0-2.249z" />
                 </svg>
                 <span class="features-title">Web and App design</span>
-                <p class="features-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quas quia cumque a esse excepturi repellendus quam, nemo sint, placeat saepe necessitatibus, ex quos eum sit, rerum ea maiores! Quae quaerat cupiditate quas voluptatum neque itaque, repudiandae nemo! Maiores velit facilis ipsum odio perspiciatis vel, excepturi, veritatis animi! Ut, nam.</p>
+                <p class="features-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique magni sed, distinctio esse a dolore?</p>
             </div>
+            <div class="features-item">
+                <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="49">
+                    <path d="M47.668 19.717L33.402 33.985.534 48.463l14.477-32.872L29.279 1.327a1.589 1.589 0 1 1 2.248 2.249L17.683 17.422 9.107 36.888l2.999 2.999 19.467-8.573L45.42 17.47a1.587 1.587 0 0 1 2.248 0c.621.62.621 1.63 0 2.247zm-20.173 6.5l13.332-13.332a1.585 1.585 0 0 1 2.25 0c.623.62.623 1.625 0 2.249L29.745 28.466a1.594 1.594 0 0 1-2.25 0 1.593 1.593 0 0 1 0-2.25zm-3.48-3.482L37.348 9.403a1.59 1.59 0 1 1 2.25 2.25L26.265 24.985a1.592 1.592 0 0 1-2.25-2.25zm-3.48-3.482l13.332-13.33a1.586 1.586 0 0 1 2.25 0c.622.62.622 1.625 0 2.25l-13.333 13.33c-.31.31-.719.465-1.125.465s-.814-.154-1.125-.466a1.591 1.591 0 0 1 0-2.249z" />
+                </svg>
+                <span class="features-title">Development</span>
+                <p class="features-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique magni sed, distinctio esse a dolore?</p>
+            </div>
+            <div class="features-item">
+                <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="49">
+                    <path d="M47.668 19.717L33.402 33.985.534 48.463l14.477-32.872L29.279 1.327a1.589 1.589 0 1 1 2.248 2.249L17.683 17.422 9.107 36.888l2.999 2.999 19.467-8.573L45.42 17.47a1.587 1.587 0 0 1 2.248 0c.621.62.621 1.63 0 2.247zm-20.173 6.5l13.332-13.332a1.585 1.585 0 0 1 2.25 0c.623.62.623 1.625 0 2.249L29.745 28.466a1.594 1.594 0 0 1-2.25 0 1.593 1.593 0 0 1 0-2.25zm-3.48-3.482L37.348 9.403a1.59 1.59 0 1 1 2.25 2.25L26.265 24.985a1.592 1.592 0 0 1-2.25-2.25zm-3.48-3.482l13.332-13.33a1.586 1.586 0 0 1 2.25 0c.622.62.622 1.625 0 2.25l-13.333 13.33c-.31.31-.719.465-1.125.465s-.814-.154-1.125-.466a1.591 1.591 0 0 1 0-2.249z" />
+                </svg>
+                <span class="features-title">Customization</span>
+                <p class="features-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique magni sed, distinctio esse a dolore?</p>
+            </div>
+            <div class="features-item">
+                <svg class="features-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="49">
+                    <path d="M47.668 19.717L33.402 33.985.534 48.463l14.477-32.872L29.279 1.327a1.589 1.589 0 1 1 2.248 2.249L17.683 17.422 9.107 36.888l2.999 2.999 19.467-8.573L45.42 17.47a1.587 1.587 0 0 1 2.248 0c.621.62.621 1.63 0 2.247zm-20.173 6.5l13.332-13.332a1.585 1.585 0 0 1 2.25 0c.623.62.623 1.625 0 2.249L29.745 28.466a1.594 1.594 0 0 1-2.25 0 1.593 1.593 0 0 1 0-2.25zm-3.48-3.482L37.348 9.403a1.59 1.59 0 1 1 2.25 2.25L26.265 24.985a1.592 1.592 0 0 1-2.25-2.25zm-3.48-3.482l13.332-13.33a1.586 1.586 0 0 1 2.25 0c.622.62.622 1.625 0 2.25l-13.333 13.33c-.31.31-.719.465-1.125.465s-.814-.154-1.125-.466a1.591 1.591 0 0 1 0-2.249z" />
+                </svg>
+                <span class="features-title">Marketing</span>
+                <p class="features-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique magni sed, distinctio esse a dolore?</p>
+            </div>
+        </section>
+        <section class="realization clearfix-section-site padding-site">
+            <span class="realization-h2">Waxom is Realization of your Ideas</span>
+            <p class="realization-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolor vitae veritatis, recusandae accusantium autem? Quos minima, tenetur nostrum sit!</p>
         </section>
     </main>
 </body>
